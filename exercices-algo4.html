@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    /////////////exo algo-04////////////////////
+    function taxImpot(age) {
+            let sex = prompt("Quel est votre sexe ?");
+            switch (sex) {
+               case "homme":
+                   if (age > 20) {
+                      alert("Vous est imposable.")
+                      break;
+                   } else {
+                       alert("Vous n'est pas imposable.")
+                       break;
+                   };
+                case "femme":
+                    if (age <= 18 || age <= 35) {
+                        alert("Vous est imposable.")
+                        break;
+                     } else {
+                        alert("Vous n'est pas imposable.")
+                         break;
+                     };
+                }
+            }
+       
+            let age = prompt("Quel est votre âge ?");
+            taxImpot(age)
+
+
+    
+
+</script>
+
+</body>
+</html>
