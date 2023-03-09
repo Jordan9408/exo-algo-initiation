@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    /////////////exo algo-02////////////////////
+    let heure = prompt("Enter l'heure");
+    let minutes = prompt("enter les minutes");
+    let secondes = prompt("enter les secondes");
+
+    heure = Number(heure);
+    minutes = Number(minutes);
+    secondes = Number(secondes);
+
+    function calculHeure(heure, minutes, secondes) {
+        minutes++;
+        secondes++;
+        if (minutes === 60, secondes === 60) {
+            heure++;
+            minutes = "00";
+            secondes = "00";
+        }
+
+        if (heure === 24) {
+            heure = "00";
+        }
+
+        if (minutes === 60) {
+            minutes = "00";
+        }
+
+        if (secondes === 60) {
+            secondes = "00";
+        }
+        return "Dans 1 seconde, il sera " + heure + ":" + minutes + ":" + secondes;
+    }
+
+    const newHour = calculHeure(heure, minutes, secondes);
+    alert(newHour)
+
+
+
+
+</script>
+
+</body>
+</html>
